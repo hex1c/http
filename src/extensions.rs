@@ -35,7 +35,7 @@ impl Hasher for IdHasher {
 pub struct Extensions {
     // If extensions are never used, no need to carry around an empty HashMap.
     // That's 3 words. Instead, this is only 1 word.
-    map: Option<Box<AnyMap>>,
+    pub map: Option<Box<AnyMap>>,
 }
 
 impl Extensions {
